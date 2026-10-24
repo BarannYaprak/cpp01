@@ -6,7 +6,7 @@
 /*   By: byaprak <byaprak@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 19:45:11 by byaprak           #+#    #+#             */
-/*   Updated: 2026/10/24 20:47:16 by byaprak          ###   ########.fr       */
+/*   Updated: 2026/10/24 21:17:28 by byaprak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,11 @@ Zombie::Zombie()
 Zombie::~Zombie()
 {
 	std::cout << name << "is delete" << std::endl;
+}
+
+void Zombie::announce()
+{
+	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
 void Zombie::setname(std::string z_name)
