@@ -6,7 +6,7 @@
 /*   By: byaprak <byaprak@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 19:15:54 by byaprak           #+#    #+#             */
-/*   Updated: 2026/10/24 21:06:54 by byaprak          ###   ########.fr       */
+/*   Updated: 2026/10/24 21:16:54 by byaprak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ class Zombie
 		Zombie(std::string z_name);
 		Zombie();
 		~Zombie();
+		void announce(void);
 		void setname(std::string z_name);
 };
 
