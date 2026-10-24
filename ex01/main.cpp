@@ -6,7 +6,7 @@
 /*   By: byaprak <byaprak@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 21:05:16 by byaprak           #+#    #+#             */
-/*   Updated: 2026/10/24 21:17:43 by byaprak          ###   ########.fr       */
+/*   Updated: 2026/10/24 21:48:10 by byaprak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 int main()
 {
 	Zombie* horde = zombieHorde(5, "Gleen");
-	for (int i; i < 5; i++)
-	{
+	for (int i = 0; i < 5; i++)
 		horde[i].announce();
-	}
+	delete[] horde;
 }
