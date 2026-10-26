@@ -6,7 +6,7 @@
 /*   By: byaprak <byaprak@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/25 00:46:18 by byaprak           #+#    #+#             */
-/*   Updated: 2026/10/26 01:46:51 by byaprak          ###   ########.fr       */
+/*   Updated: 2026/10/26 01:56:47 by byaprak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ HumanA::HumanA(std::string human_name, Weapon& wpn_ref)
 
 void	HumanA::attack()
 {
-	std::cout << name << "attacks with their" << Wpn.getType();
+	std::cout << name << " attacks with their " << Wpn.getType() << std::endl;
 }
