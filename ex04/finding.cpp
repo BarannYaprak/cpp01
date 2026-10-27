@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   findig.cpp                                         :+:      :+:    :+:   */
+/*   finding.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: byaprak <byaprak@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 20:28:29 by byaprak           #+#    #+#             */
-/*   Updated: 2026/10/27 02:15:41 by byaprak          ###   ########.fr       */
+/*   Updated: 2026/10/27 02:43:10 by byaprak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	finding(std::string s1, std::string s2, std::string filename)
 	while(std::getline(infile, line))
 	{
 		index = 0;
-		while((i = line.find(s1, index)))
+		while((i = line.find(s1, index)) != std::string::npos)
 		{
 			outfile << line.substr(0, i);
 			outfile << s2;
