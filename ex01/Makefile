@@ -1,16 +1,16 @@
 NAME = zombie
-CPPFLAGS = -Wall -Werror -Wextra -std=c++98
-CPP = c++
+CXXFLAGS = -Wall -Werror -Wextra -std=c++98
+CXX = c++
 SRC = $(wildcard *.cpp)
 OBJ = $(SRC:.cpp=.o)
 
 all:$(NAME)
 
 $(NAME):$(OBJ)
-	$(CPP) $(CPPFLAGS) $(OBJ) -o $(NAME)
+	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
 
 $(OBJ):$(SRC)
-	$(CPP) $(CPPFLAGS) -c $(SRC)
+	$(CXX) $(CXXFLAGS) -c $(SRC)
 
 clean:
 	rm -rf $(OBJ)
