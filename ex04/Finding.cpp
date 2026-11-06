@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   finding.cpp                                        :+:      :+:    :+:   */
+/*   Finding.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: byaprak <byaprak@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 20:28:29 by byaprak           #+#    #+#             */
-/*   Updated: 2026/10/27 23:18:15 by byaprak          ###   ########.fr       */
+/*   Updated: 2026/11/06 19:36:21 by byaprak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ void	finding(std::string s1, std::string s2, std::string filename)
 		while((i = line.find(s1)) != std::string::npos)
 		{	
 			outfile << line.substr(0, i);
-			std::cout << line.substr(i) << std::endl;
+			//std::cout << line.substr(i) << std::endl;
 			outfile << s2;
 			line = line.substr(i + s1.length());
-			std::cout << "I: " << i << std::endl;
+			//std::cout << "I: " << i << std::endl;
 		}
 		outfile << line.substr(0, i);
 		outfile << std::endl;

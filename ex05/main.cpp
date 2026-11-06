@@ -6,7 +6,7 @@
 /*   By: byaprak <byaprak@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 20:31:11 by byaprak           #+#    #+#             */
-/*   Updated: 2026/11/02 22:03:33 by byaprak          ###   ########.fr       */
+/*   Updated: 2026/11/06 19:37:21 by byaprak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,21 +33,3 @@ int main(void)
 
 	return (0);
 }
-
-/*int	main(int ac, char **av)
-{
-	Harl message;
-
-	if (ac == 1)
-	{
-		std::cout << CYAN << "Please enter a valid argument" << RESET << std::endl;
-		return (1);
-	}
-	else if (ac > 2)
-	{
-		std::cout << CYAN << "Please enter a one valid argument" << RESET << std::endl;
-		return (1);
-	}
-	message.complain(av[1]);
-	return (0);
-}*/

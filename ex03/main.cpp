@@ -6,7 +6,7 @@
 /*   By: byaprak <byaprak@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 00:58:04 by byaprak           #+#    #+#             */
-/*   Updated: 2026/10/26 01:00:36 by byaprak          ###   ########.fr       */
+/*   Updated: 2026/11/06 19:18:56 by byaprak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,7 @@ int main()
 		jim.setWeapon(club);
 		jim.attack();
 		club.setType("some other type of club");
-		jim.attack(); } return 0;
+		jim.attack();
+	} 
+	return 0;
 	}

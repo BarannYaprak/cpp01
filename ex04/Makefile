@@ -1,4 +1,4 @@
-NAME = sed
+NAME = fin
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 CXX = c++
 SRC = $(wildcard *.cpp)
